@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   base: process.env.GITHUB_PAGES
   ? "conoha-sample"
-  : "./",
+  : "/",
   plugins: [react()],
   server: {
     proxy: {
