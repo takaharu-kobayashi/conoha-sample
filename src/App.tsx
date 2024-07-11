@@ -45,11 +45,11 @@ const App: React.FC = () => {
       <div className="p-4 bg-gray-300">
         <AuthTokenInput authToken={authToken} setAuthToken={setAuthToken} />
       </div>
-      <div className="flex flex-1">
-        <div className="w-1/4 p-4 bg-gray-200">
+      <div className="flex flex-1 overflow-hidden">
+        <div className="w-1/4 p-4 bg-gray-200 overflow-auto">
           <ApiMenu onApiSelect={handleApiCall} />
         </div>
-        <div className="w-3/4 p-4 bg-white">
+        <div className="w-3/4 p-4 bg-white overflow-auto">
           <ApiResponse response={response} error={error} />
         </div>
       </div>

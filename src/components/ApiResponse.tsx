@@ -10,12 +10,12 @@ const ApiResponse: React.FC<ApiResponseProps> = ({ response, error }) => {
     <div>
       <h2 className="text-lg font-bold mb-4">API Response</h2>
       {response && (
-        <pre className="bg-gray-100 text-black p-4 rounded border overflow-auto max-w-full">
+        <pre className="bg-gray-100 text-black p-4 rounded border overflow-auto h-full max-w-full">
           {response}
         </pre>
       )}
       {error && (
-        <div className="bg-red-100 text-black p-4 rounded border">
+        <div className="bg-red-100 text-black p-4 rounded border overflow-auto h-full max-w-full">
           {error}
         </div>
       )}
