@@ -14,8 +14,10 @@ const App: React.FC = () => {
     setError('');
 
     const urlMap: { [key: string]: string } = {
-      volumeTypes: '/api/v3/a9a801c0a92346e997a61b6a6c2d368f/types',
-      volumeList: '/api/v3/a9a801c0a92346e997a61b6a6c2d368f/volumes',
+      volumeTypes: 'https://block-storage.c3j1.conoha.io/v3/a9a801c0a92346e997a61b6a6c2d368f/types',
+      volumeList: 'https://block-storage.c3j1.conoha.io/v3/a9a801c0a92346e997a61b6a6c2d368f/volumes',
+      // volumeTypes: '/api/v3/a9a801c0a92346e997a61b6a6c2d368f/types',
+      // volumeList: '/api/v3/a9a801c0a92346e997a61b6a6c2d368f/volumes',
     };
 
     try {
