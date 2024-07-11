@@ -49,7 +49,7 @@ const App: React.FC = () => {
         <div className="w-1/4 p-4 bg-gray-200">
           <ApiMenu onApiSelect={handleApiCall} />
         </div>
-        <div className="w-3/4 p-4">
+        <div className="w-3/4 p-4 bg-white">
           <ApiResponse response={response} error={error} />
         </div>
       </div>
